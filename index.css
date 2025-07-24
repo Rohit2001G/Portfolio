@@ -1,0 +1,633 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+    scroll-timeline: 10s;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color :rgb(6, 26, 32);
+    border-radius: 10px;
+    /* border: 1px solid aqua; */
+}
+nav{
+    height: 80px;
+    width: 99vw;
+   
+    margin-left: 5px;
+    
+}
+body{
+    background-color: rgb(6, 26, 32);
+}
+
+nav ul{
+   display: flex;
+   margin-left: 100px;
+      
+}
+ .left{
+    padding: 25px ; 
+    color: aqua;
+    font-size: 30px;
+    font-weight: 900;
+    margin-right: 300px;
+  
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 100px;
+    
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+     font-size: larger;
+}
+li a:hover{
+   color: chocolate;
+   font-weight: 500;
+   text-decoration: underline 2px;
+   /* filter: drop-shadow(2px 2px 1px green); */
+   
+
+}
+.contain{
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* border: 2px solid wheat; */
+}
+.box1{
+    grid-column: 1/2;
+    /* border: 2px solid red; */
+    color: aliceblue;
+    font-size: x-large;
+    /* text-align: center; */
+    
+}
+.hi{
+    margin: 100px 0 0 150px;
+    line-height: 50px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 40px;
+}
+.hi2{
+    margin: 50px 0 0 100px;
+    font-size: 20px;
+}
+.logoes{
+    height: 60px;
+    width: 50vw;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    animation: left linear 4s ;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 50%;  
+}
+@keyframes left{
+    from{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#logo1{
+    position: absolute;   
+    top: 30px;
+    left: 50px;
+}
+
+
+.logo2{
+    height: 50px ;
+    width: 50px;
+    background-image: url(face.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    border-radius: 50%;
+    /* border: 5px solid aqua; */
+    /* box-shadow: 1px 1px 10px aqua; */
+}
+.logo2:hover{
+    box-shadow: 2px 2px 10px rgb(18, 88, 238),-2px -2px 10px rgb(18, 88, 238); 
+    border: 2px solid  rgb(18, 88, 238); 
+    box-sizing: border-box;
+    scale: 1.2;        
+ }
+.logo3{
+    height: 50px ;
+    width: 50px;
+    background-image: url(insta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 176px;
+}
+.logo3:hover{
+    box-shadow: 2px 2px 10px rgb(207, 1, 248),-2px -2px 10px rgb(207, 1, 248); 
+    border: 2px solid  rgb(207, 1, 248); 
+    box-sizing: border-box;  
+    scale: 1.2;      
+ }
+.logo4{
+    height: 50px ;
+    width: 50px;
+    background-image: url(in.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 237px;
+}
+.logo4:hover{
+    box-shadow: 2px 2px 10px chocolate,-2px -2px 10px chocolate; 
+    border: 2px solid  chocolate; 
+    box-sizing: border-box; 
+    scale: 1.2;       
+ }
+.logo5{
+    height: 50px ;
+    width: 50px;
+    background-image: url(email.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 298px;
+}
+.logo5:hover{
+    box-shadow: 2px 2px 10px rgb(30, 248, 1),-2px -2px 10px rgb(30, 248, 1); 
+    border: 2px solid  rgb(30, 248, 1); 
+    box-sizing: border-box; 
+    scale: 1.2;       
+ }
+.logo6{
+    height: 50px ;
+    width: 50px;
+    background-image: url(twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 357px;
+}
+.logo6:hover{
+    box-shadow: 2px 2px 10px white,-2px -2px 10px white; 
+    border: 2px solid  white; 
+    box-sizing: border-box; 
+    scale: 1.2; 
+ }
+.logo7{
+    position: absolute;   
+    top: 30px;
+    left: 413px;
+}
+.box2{
+    grid-column: 2/3;
+   
+    /* border: 2px solid rgb(51, 255, 0); */
+}
+.img{
+    height: 550px;
+    width: 400px;
+    background-image: url(IMG_20241209_231926_518.webp);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    color: aliceblue;
+    cursor: pointer;
+    /* border: 5px solid red; */
+    border-radius: 150px;
+    margin: 30px 0 0 150px;
+    animation: ok linear ;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 50%;
+    
+}
+@keyframes ok{
+    from{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.img:hover{
+    box-shadow: 1px 1px 15px rgb(0, 255, 34);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.infodiv{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+#Information{
+    transition: all 5s ease;
+}
+.info{
+    color: aqua;
+   text-align: center;
+   margin-top: 100px;
+   
+}
+
+.infohr{
+    height: 3px;
+    width: 190px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 575px;
+   
+}
+.info1{
+    height: 65vh;
+    width: 20vw;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    grid-row: 1/2;
+    background-image: url(Snapchat-750900909.jpg);
+    backdrop-filter: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    animation: left1 linear ;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 50%;
+    
+}
+@keyframes left1{
+    from{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.info1:hover{
+    box-shadow: 1px 1px 11px rgb(255, 251, 0);
+        transform: scale(1.03);
+        cursor: pointer;
+}
+
+.info2{
+    grid-column: 2/4;
+    height: 60vh;
+    width: 60vw;
+    /* border: 2px solid green; */
+    position:absolute;
+    color: aliceblue;
+    animation: right linear ;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 50%;
+}
+@keyframes right{
+    from{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+    .ro{
+        margin: 150px 10px 0 10px;
+        line-height: 20px;
+    }
+    .skill{
+        color: aqua;
+       text-align: center;
+       margin-top: 50px;
+    }
+    .skillhr{
+        height: 3px;
+        width: 90px;
+        background-color: aliceblue;
+        position: absolute;
+        left: 625px;       
+    }
+    .skill-container{
+        height: 100vh;
+        width: 99vw;
+        padding: 35px 20px 0 20px;
+        line-height: 20px;
+        
+    }
+    .skill1{
+        grid-column: 1/4;
+        color: aliceblue;
+        padding: 20px 50px 10px 50px;
+    }
+    .skill2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        animation: skillleft linear ;
+        animation-timeline: view() ;
+        animation-range: entry 0% cover 50%;
+
+    }
+    @keyframes skillleft{
+        from{
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+
+    
+    
+    .project{
+        color: aqua;
+       text-align: center;
+       margin-top: 70px;
+    }
+    .projecthr{
+        height: 3px;
+        width: 130px;
+        background-color: aliceblue;
+        position: absolute;
+        left: 606px;       
+    }
+    .project-container{
+        height: 100vh;
+        width: 99vw;
+        padding: 10px 20px 0 20px;
+        line-height: 20px;
+    }
+    .project1{
+        grid-column: 1/4;
+        color: aliceblue;
+        padding: 40px 50px 10px 50px;
+      
+    }
+    .project2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        animation: proright linear ;
+        animation-timeline: view() ;
+        animation-range: entry 0% cover 50%;
+
+    }
+    @keyframes proright{
+        from{
+            opacity: 0;
+            transform: translateX(150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    div img{
+        height: 200px;
+        width: 350px;
+        border: 2px solid rgb(6, 137, 155);
+        border-radius: 10px;
+        margin: 20px;
+
+    }
+
+    div img:hover{
+        box-shadow: 5px 5px 10px aqua;
+        transform: scale(1.03);
+        
+
+    }
+    .head{
+        color: rgb(179, 75, 214);
+    }
+    .contact{
+        height: 100vh;
+        width: 60vw;
+        position: relative;
+        top: 80px;
+        left: 262px;
+        color: wheat;
+        line-height: 25px;
+        animation: cont linear ;
+        animation-timeline: view() ;
+        animation-range: entry 0% cover 50%;
+    }
+    @keyframes cont{
+        from{
+            opacity: 0;
+            transform: translatey(150px);
+        }
+        to{
+            opacity: 1;
+            transform: translatey(0px);
+        }
+    }
+    legend{
+        text-align: center;
+    }
+    
+    .input{
+        height: 43px;
+        width: 441px;
+        border-radius: 5px;
+        margin: 10px;
+        position: relative;
+        left: 172px;
+        font-size: 20px;
+    }
+    .input:hover{
+        /* border: 5px solid maroon; */
+        background-color:rgba(3, 3, 3, 0.527);
+        color: rgb(248, 250, 250);
+        box-shadow: 2px 2px 10px rgb(99, 243, 2);
+        
+    }
+    textarea{
+        height: 280px;
+        width: 441px;
+        border-radius: 5px;
+        margin: 10px;
+        position: relative;
+        left: 172px;
+        font-size: 20px;
+
+    }
+    textarea:hover{
+        /* border: 5px solid maroon; */
+        background-color:  rgba(3, 3, 3, 0.527);
+        color: rgb(248, 250, 250);
+        box-shadow: 2px 2px 10px rgb(99, 243, 2);
+        
+    }
+    .submit{
+        height: 30px;
+        width: 95px;
+        border-radius: 5px;
+        margin: 10px;
+        position: relative;
+        left: 172px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .submit:hover{
+        box-shadow: 1px 1px 5px aqua,-2px -2px 5px aqua;
+        background-color: black;
+        color: aliceblue;
+     }
+     .fname{
+        text-align: center;
+        color: aliceblue;
+        position: relative;
+        top: 20px;
+        color: chocolate;
+     }
+footer{
+    background-color: rgba(37, 88, 71, 0.308);
+}
+    .fcontainer{
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+     }
+    
+     .fclone1{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url(whatsapp.png);
+        background-position: center;
+        background-size: cover;
+        
+     }
+     .fclone1:hover{
+        box-shadow: 2px 2px 10px rgb(2, 248, 43),.6px .6px 12px rgb(2, 248, 43); 
+        border: 2px solid  rgb(2, 248, 43) ; 
+        box-sizing: border-box;      
+     }
+
+     .fclone2{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url(facebook.png);
+        background-position: center;
+        background-size: cover;
+        margin-left: 10px;
+     }
+     .fclone2:hover{
+        box-shadow: 2px 2px 10px rgb(18, 88, 238),.6px .6px 12px rgb(18, 88, 238); 
+        border: 2px solid  rgb(18, 88, 238); 
+        box-sizing: border-box;        
+     }
+     .fclone3{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url(insta.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 10px;
+     }
+     .fclone3:hover{
+        box-shadow: .5px .5px 12px rgb(174, 2, 241),.6px .6px 12px rgb(174, 2, 241) ; 
+        border: 2px solid  rgb(174, 2, 241); 
+        box-sizing: border-box;       
+     }
+     .fclone4{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        margin-left: 10px;
+        background-image: url(email.jpg);
+        background-position: center;
+        background-size: cover;
+     }
+     .fclone4:hover{
+        box-shadow: .5px .5px 12px rgb(58, 241, 2),.6px .6px 12px rgb(58, 241, 2); 
+        border: 2px solid  rgb(58, 241, 2); 
+        box-sizing: border-box;       
+     }
+     .fclone5{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url(twitter.png);
+        background-position: center;
+        background-size: cover;
+        margin-left: 10px;
+     }
+     .fclone5:hover{
+        box-shadow: .5px .5px 12px white,.6px .6px 12px white; 
+        border: 2px solid  white; 
+        box-sizing: border-box;       
+     }
+.fnote{
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    bottom: 20px;
+}
+
+
+    
+    
